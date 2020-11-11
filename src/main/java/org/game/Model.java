@@ -21,7 +21,7 @@ public class Model {
 
     public int getHiddenValue() {
         return hiddenValue;
-    }
+    }  //for unit test
 
     public void setHiddenValue() {
         this.hiddenValue = new RandomDataGenerator().nextInt(minValue, maxValue);
@@ -39,8 +39,7 @@ public class Model {
             return true;
         else if (inputValue > hiddenValue)
             maxValue = inputValue;
-        else if (inputValue < hiddenValue)
-            minValue = inputValue;
+        else minValue = inputValue;
         return false;
     }
 }

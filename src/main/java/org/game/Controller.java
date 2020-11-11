@@ -14,7 +14,7 @@ public class Controller {
     public void playGame() {
         Scanner scanner = new Scanner(System.in);
         model.setHiddenValue();
-        System.out.println(model.getHiddenValue());
+        //System.out.println(model.getHiddenValue());  //for test run
         view.showMessage(View.TRY_INPUT_MESSAGE + "[" + model.getMinValue() + ", " + model.getMaxValue() + "]");
         verifyInput(scanner);
     }
